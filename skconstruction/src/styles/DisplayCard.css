@@ -1,0 +1,54 @@
+.cardBgColor {
+    background-color: #373737;
+}
+
+.makeRound {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 0px;
+}
+.centerContainer {
+    text-align: center;
+    position: relative;
+}
+.centerChild {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -120%);
+}
+
+.arrowPosition {
+    position:absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.contactUs {
+    padding-top: 10px;
+}
+.someMargin {
+    margin-top: 20px;
+}
+
+.fontSizeSmall {
+    font-size: 24px;
+}
+
+.fontSizeBig {
+    font-size: 32px;
+}
+
+.fontFamily {
+    font-family: 'Lexend', sans-serif;
+}
+
+.boxShadow {
+    box-shadow: 0px 4px 20px 5px;
+}
