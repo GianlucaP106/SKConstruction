@@ -5,9 +5,6 @@ import "../styles/NavBar.css"
 
 export default class NaviBar extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
@@ -17,8 +14,8 @@ export default class NaviBar extends React.Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto ms-auto">
-                            <Nav.Link className="text-white" href="#features">Home</Nav.Link>
-                            <Nav.Link className="text-white" href="#pricing">About</Nav.Link>
+                            <Nav.Link className="text-white" href="#">Home</Nav.Link>
+                            <Nav.Link className="text-white" href="#aboutSection">About</Nav.Link>
                             <Nav.Link className="text-white" href="#pricing">Services</Nav.Link>
                             <Nav.Link className="text-white" href="#pricing">Projects</Nav.Link>
                             <Nav.Link className="text-white" href="#pricing">Contact Us</Nav.Link>

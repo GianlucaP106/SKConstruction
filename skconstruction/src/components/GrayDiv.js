@@ -7,7 +7,7 @@ function GrayDiv() {
             <div className="inlineDisplay" style={{"height": "50px", "background-color": "#D9D9D9", "align-items": "center"}}>
                 <div style={{"width": "100%","display": "flex", "justify-content": "flex-start"}}>
                     <div style={{"border-right": "2px solid black", "margin-right": "25px", "padding-right": "25px"}}>
-                        <h4 style={{"margin-left": "20px"}}>Serigo Kassabian</h4>
+                        <h4 style={{"margin-left": "20px"}}>Sergio Kassabian</h4>
                     </div>
                     <div>
                         <h4>General Contractor</h4>

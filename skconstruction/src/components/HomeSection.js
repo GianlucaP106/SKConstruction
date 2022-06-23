@@ -7,15 +7,14 @@ export default class HomeSection extends React.Component {
 
     render() {
         return (
-            <section className="bgImg">
-                
+            <section className="bgImg" id="homeSection">
                 <div className="row">
                     <div className="col-2"></div>
                     <div className="col-md-4 center">
-                        <DisplayCard className="theMargin"height={"198px"} width={"366px"} isProject={true} isQuote={false}/>
+                        <DisplayCard className="theMargin"height={"198px"} width={"366px"} isProject={true} isContact={false}/>
                     </div>
                     <div className="col-md-4 center">
-                        <DisplayCard height={"198px"} width={"366px"} isProject={false} isQuote={true}/>
+                        <DisplayCard height={"198px"} width={"366px"} isProject={false} isContact={true}/>
                     </div>
                 </div>
             </section>

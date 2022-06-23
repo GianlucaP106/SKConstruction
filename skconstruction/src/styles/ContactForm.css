@@ -1,0 +1,23 @@
+.someMarginForm {
+    margin: 5px;
+}
+
+.fixRadio {
+    margin-left: 150px;
+}
+
+.inputBoxFix {
+    width: 600px;
+    height: 40px;
+}
+
+.jobBoxFix {
+    width: 600px;
+    height: 200px;
+}
+.formSendButton {
+    background-color: #373737;
+    color: white;
+    width: 133px;
+    height: 42px;
+}

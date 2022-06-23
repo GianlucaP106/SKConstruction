@@ -1,0 +1,10 @@
+.bgAbout {
+    background-color: #999999;
+}
+
+.quoteCardPosition {
+    position: relative;
+    bottom: 150px;
+    left: 200px;
+    z-index: 1;
+}
