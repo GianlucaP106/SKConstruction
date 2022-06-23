@@ -8,7 +8,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <section className="bgContact">
-                <div className="row" style={{"padding-top": "20px"}}>
+                <div className="row" style={{paddingTop: "20px"}}>
                     <div className="col-md-1"></div>
                     <div className="col-md">
                         <ContactForm />

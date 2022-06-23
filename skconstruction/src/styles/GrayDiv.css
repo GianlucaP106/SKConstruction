@@ -17,3 +17,38 @@
 .inlineDisplay {
     display: flex;  
 }
+
+.skFontSize {
+    font-size: 20px;
+}
+.skCenterText {
+    text-align: center;
+}
+
+.skFormat {
+    border-right: 2px solid black;
+    margin-right: 25px;
+    padding-right: 25px;
+    
+}
+@media only screen and (min-width: 1200px) {
+    .responsiveFix {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .skFontSize {
+        font-size: 15px
+    }
+    .skFormat {
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skFontSize {
+        font-size: 12px
+    }
+}

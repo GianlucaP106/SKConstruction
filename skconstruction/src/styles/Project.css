@@ -1,0 +1,10 @@
+.projectBg {
+    background-color: #fbfbfb;
+}
+.fixCarousel {
+    width: 90%;
+}
+.fixCarouselPosition {
+    display: flex;
+    justify-content: center;
+}

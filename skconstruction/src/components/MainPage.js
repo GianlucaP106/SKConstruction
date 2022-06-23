@@ -24,8 +24,6 @@ export default class MainPage extends React.Component {
                 <About />
                 <Services />
                 <Project />
-                <TransitionComponent />
-                <Contact />
                 <FooterBar />
             </div>
         );

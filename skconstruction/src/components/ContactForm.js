@@ -76,7 +76,7 @@ export default function ContactForm() {
                 <div className="someMarginForm">
                     <label>Job Type</label>
                 </div>
-                <div className="someMarginForm" style={{"width": "600px", "display": "flex", "justify-content": "space-evenly"}}>
+                <div className="someMarginForm" style={{"width": "600px", "display": "flex", justifyContent: "space-evenly"}}>
                     <div>
                         <input ref={radio1} type="radio" name="user_job_type" value="commercial" />
                     </div>
@@ -96,11 +96,11 @@ export default function ContactForm() {
                 <div className="someMarginForm">
                     <textarea ref={jobDescriptionInput} className="jobBoxFix inputFields" name="message" />
                 </div>
-                <div className="someMarginForm" style={{"width": "600px", "display": "flex", "justify-content": "flex-end"}}>
-                    <div style={{"margin-right": "10px"}}>
+                <div className="someMarginForm" style={{"width": "600px", display: "flex", justifyContent: "flex-end"}}>
+                    <div style={{marginRight: "10px"}}>
                         <button type="button" className="formSendButton" onClick={resetForm}>Clear</button>
                     </div>
-                    <div style={{"margin-left": "10px"}}>
+                    <div style={{marginLeft: "10px"}}>
                         <input className="formSendButton" type="submit" value="Send" disabled={isDisabled} />
                     </div>
                 </div>
