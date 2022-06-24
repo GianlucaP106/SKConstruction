@@ -34,16 +34,16 @@ export default function ContactForm() {
     const sendEmail = (e) => {
 
         setFalse();
-        resetForm();
-
+        
         e.preventDefault();
-    
+        
         emailjs.sendForm('service_by43v7z', 'template_ccaag9o', form.current, 'KH7O7vPOajOPZAtMm')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        resetForm();
       };
 
     return (
@@ -53,38 +53,38 @@ export default function ContactForm() {
                     <label>Name</label>
                 </div>
                 <div className="someMarginForm">
-                    <input ref={nameInput} className="inputBoxFix inputFields" type="text" name="user_name" placeholder="Name" />
+                    <input ref={nameInput} className="inputBoxFix inputFields inputBoxBorder" type="text" name="user_name" placeholder="Name" />
                 </div>
                 <div className="someMarginForm">
                     <label>City</label>
                 </div>
                 <div className="someMarginForm">
-                    <input ref={cityInput} className="inputBoxFix inputFields" type="text" name="user_city" />
+                    <input ref={cityInput} className="inputBoxFix inputFields inputBoxBorder" type="text" name="user_city" />
                 </div>
                 <div className="someMarginForm">
                     <label>Email</label>
                 </div>
                 <div className="someMarginForm">
-                    <input ref={emailInput} className="inputBoxFix inputFields" type="email" name="user_email" />
+                    <input ref={emailInput} className="inputBoxFix inputFields inputBoxBorder" type="email" name="user_email" />
                 </div>
                 <div className="someMarginForm">
                     <label>Phone Number</label>
                 </div>
                 <div className="someMarginForm">
-                    <input ref={phoneInput} className="inputBoxFix inputFields" type="tel" name="user_phone" />
+                    <input ref={phoneInput} className="inputBoxFix inputFields inputBoxBorder" type="tel" name="user_phone" />
                 </div>
                 <div className="someMarginForm">
                     <label>Job Type</label>
                 </div>
                 <div className="someMarginForm radioButtonDiv" style={{"display": "flex", justifyContent: "flex-start", alignItems: "center"}}>
                     <div>
-                        <input ref={radio1} type="radio" name="user_job_type" value="commercial" />
+                        <input className="inputBoxBorder" ref={radio1} type="radio" name="user_job_type" value="commercial" />
                     </div>
                     <div>
                         <p style={{marginLeft: "10px", marginBottom: "0"}}>Commercial</p>
                     </div>
                     <div>
-                        <input ref={radio2} className="fixRadio" type="radio" name="user_job_type" value="residential" />
+                        <input ref={radio2} className="fixRadio inputBoxBorder" type="radio" name="user_job_type" value="residential" />
                     </div>
                     <div>
                         <p style={{marginLeft: "10px", marginBottom: "0"}}>Residential</p>
@@ -94,7 +94,7 @@ export default function ContactForm() {
                     <label>Job Description (i.e. bathroom, kitchen etc.)</label>
                 </div>
                 <div className="someMarginForm">
-                    <textarea ref={jobDescriptionInput} className="jobBoxFix inputFields" name="message" />
+                    <textarea ref={jobDescriptionInput} className="jobBoxFix inputFields inputBoxBorder" name="message" />
                 </div>
                 <div className="someMarginForm formButtonDiv" style={{display: "flex", justifyContent: "flex-end"}}>
                     <div style={{marginRight: "10px"}}>

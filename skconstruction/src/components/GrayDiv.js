@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/GrayDiv.css";
 
-function GrayDiv() {
+function GrayDiv(props) {
     return (
         <div>
             <div className="inlineDisplay" style={{height: "50px", backgroundColor: "#D9D9D9", alignItems: "center"}}>

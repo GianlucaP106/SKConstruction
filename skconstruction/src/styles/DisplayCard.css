@@ -75,7 +75,9 @@
 .onHoverButton:hover {
     box-shadow: 0px 4px 20px 5px #fff;
 }
-
+.displayCardBlockShadow:hover {
+    box-shadow: 5px 4px 30px 5px #080808;
+}
 .boxSize1 {
    height: 198px;
    width: 366px;

@@ -9,7 +9,7 @@ import arrow from "../assets/images/arrow.png";
 function DisplayCard(props) {
     
     function checkShadow(quote, contact, project) {
-        if (project || contact) return "boxShadow";
+        if (project || contact) return "boxShadow displayCardBlockShadow";
         if (quote) return "boxShadow2";
     }
     function checkSize(quote, contact, project) {

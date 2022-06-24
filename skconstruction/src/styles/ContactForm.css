@@ -20,7 +20,9 @@
     width: 600px;
     height: 150px;
 }
-
+.inputBoxBorder {
+    border: solid 2px black;
+}
 .formButtonDiv {
     width: 600px;
 }
