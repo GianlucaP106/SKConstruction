@@ -17,9 +17,9 @@ export default class HomeSection extends React.Component {
                         <DisplayCard isProject={false} isContact={true}/>
                     </div>
                 </div>
-                <div className="row" style={{paddingTop: "200px", paddingBottom: "200px"}}>
+                <div className="row" style={{paddingTop: "200px", paddingBottom: "0px"}}>
                     <div className="col quoteCardContainer">
-                        <div className="quoteCardPosition">
+                        <div id="quoteCardPosition">
                             <DisplayCard isProject={false} isQuote={true} isContact={false} />
                         </div>
                     </div>

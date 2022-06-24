@@ -9,11 +9,15 @@ import arrow from "../assets/images/arrow.png";
 function DisplayCard(props) {
     
     function checkShadow(quote, contact, project) {
-        if (project || contact) return "boxShadow boxSize1";
-        if (quote) return "boxShadow2 boxSize2";
+        if (project || contact) return "boxShadow";
+        if (quote) return "boxShadow2";
+    }
+    function checkSize(quote, contact, project) {
+        if (project || contact) return "boxSize1";
+        if (quote) return "boxSize2";
     }
     return (
-        <div className={"cardBgColor makeRound centerContainer " + checkShadow(props.isQuote, props.isContact, props.isProject)}>
+        <div className={"cardBgColor makeRound centerContainer " + checkShadow(props.isQuote, props.isContact, props.isProject) + " " + checkSize(props.isQuote, props.isContact, props.isProject)}>
             <div className={props.isProject ? "" : "noDisplay"}>
                 <h3 className={"centerChild text-white fontSizeBig fontFamily font-weight-bold"}>Projects</h3>
             </div>
@@ -31,7 +35,7 @@ function DisplayCard(props) {
                 </Link>
             </div> 
 
-            <div className={props.isQuote ? "" : "noDisplay"} style={{paddingTop: "70px", paddingBottom: "20px", paddingLeft: "20px", paddingRight: "20px"}}>
+            <div className={(props.isQuote ? "" : "noDisplay") + " cardPadTopResp"} style={{paddingBottom: "20px", paddingLeft: "20px", paddingRight: "20px"}}>
                 <p className="text-white someMargin fontSizeXSmall fontFamily" >SK Construction specializes in home rennovations, home extensions, commercial rennovations and more!</p>
             </div>
             <div className={props.isQuote ? "" : "noDisplay"}>

@@ -47,7 +47,7 @@ export default function ContactForm() {
       };
 
     return (
-        <div>
+        <div className="" style={{textAlign: "left"}}>
             <form ref={form} onSubmit={sendEmail}>
                 <div className="someMarginForm">
                     <label>Name</label>
@@ -76,27 +76,27 @@ export default function ContactForm() {
                 <div className="someMarginForm">
                     <label>Job Type</label>
                 </div>
-                <div className="someMarginForm" style={{"width": "600px", "display": "flex", justifyContent: "space-evenly"}}>
+                <div className="someMarginForm radioButtonDiv" style={{"display": "flex", justifyContent: "flex-start", alignItems: "center"}}>
                     <div>
                         <input ref={radio1} type="radio" name="user_job_type" value="commercial" />
                     </div>
                     <div>
-                        <p>Commercial</p>
+                        <p style={{marginLeft: "10px", marginBottom: "0"}}>Commercial</p>
                     </div>
                     <div>
                         <input ref={radio2} className="fixRadio" type="radio" name="user_job_type" value="residential" />
                     </div>
                     <div>
-                        <p>Residential</p>
+                        <p style={{marginLeft: "10px", marginBottom: "0"}}>Residential</p>
                     </div>
                 </div>
                 <div className="someMarginForm">
-                    <label>Job Description (i.e. bathroom, kitchen, tiles etc.)</label>
+                    <label>Job Description (i.e. bathroom, kitchen etc.)</label>
                 </div>
                 <div className="someMarginForm">
                     <textarea ref={jobDescriptionInput} className="jobBoxFix inputFields" name="message" />
                 </div>
-                <div className="someMarginForm" style={{"width": "600px", display: "flex", justifyContent: "flex-end"}}>
+                <div className="someMarginForm formButtonDiv" style={{display: "flex", justifyContent: "flex-end"}}>
                     <div style={{marginRight: "10px"}}>
                         <button type="button" className="formSendButton" onClick={resetForm}>Clear</button>
                     </div>

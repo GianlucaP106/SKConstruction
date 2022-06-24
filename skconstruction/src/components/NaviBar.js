@@ -12,7 +12,7 @@ export default class NaviBar extends React.Component {
         return (
             <Navbar collapseOnSelect expand="lg" className="bgColor" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#homeSection"><img src={SKLogo} alt="SK Construction logo" height="40" /></Navbar.Brand>
+                    <Navbar.Brand href="#homeSection"><img src={SKLogo} className="brandFixPosition" alt="SK Construction logo" height="40" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto ms-auto">

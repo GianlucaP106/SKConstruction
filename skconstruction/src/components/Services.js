@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 import homeIcon from "../assets/images/homeIcon.png";
 import newHouseIcon from "../assets/images/newHouseIcon.png";
@@ -45,9 +45,9 @@ export default class Services extends React.Component {
                 </div>
                 <div className="row" style={{paddingBottom: "100px" }}>
                     <div className="col quoteBlockButtonCenter">
-                        
-                            <button className="quoteBlockButton quoteBlockShadow"><p className="servicesFontSize fontFamily">Trust us with you next project request a quote today!</p></button>
-                        
+                        <div>
+                            <Link to="/contact"><button className="quoteBlockButton quoteBlockShadow"><p className="servicesFontSize fontFamily" style={{marginBottom: "0"}}>Trust us with your next project, request a quote today!</p></button></Link>
+                        </div>
                     </div>
                 </div>
             </section>

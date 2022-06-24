@@ -84,14 +84,19 @@
     height: 351px;
     width: 366px;
 }
+.cardPadTopResp {
+    padding-top: 70px;
+}
 
 @media only screen and (max-width: 768px) {
     .boxSize1 {
         width: 320px;
-    }
-
+    } 
     .boxSize2 {
-        height: 351px;
+        height: 300px;
         width: 320px;
+    }
+    .cardPadTopResp {
+        padding-top: 20px;
     }
 }

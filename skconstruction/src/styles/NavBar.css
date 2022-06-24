@@ -5,6 +5,11 @@
 .navbar {
     padding-top: 15px;
 }
+.brandFixPosition {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 
 
 

@@ -6,3 +6,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.fontFamily {
+    font-family: 'Lexend', sans-serif;
+}
+#formHeaderAdjust {
+    width: 600px;
+}
+@media only screen and (min-width: 768px) {
+    .formPadMobile {
+        padding-left: 0;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .bgContact {
+        height: 
+    }
+} */
