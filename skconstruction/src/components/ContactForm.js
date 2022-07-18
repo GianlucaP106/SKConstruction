@@ -33,17 +33,20 @@ export default function ContactForm() {
 
     const sendEmail = (e) => {
 
-        setFalse();
         
+        if (nameInput.current.value && cityInput.current.value && emailInput.current.value && phoneInput.current.value && (radio1.current.checked || radio2.current.checked)) {
+            setFalse();
+            
+            
+            emailjs.sendForm('service_by43v7z', 'template_ccaag9o', form.current, 'KH7O7vPOajOPZAtMm')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            resetForm();
+        }
         e.preventDefault();
-        
-        emailjs.sendForm('service_by43v7z', 'template_ccaag9o', form.current, 'KH7O7vPOajOPZAtMm')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-        resetForm();
       };
 
     return (
